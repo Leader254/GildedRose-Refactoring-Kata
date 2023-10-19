@@ -1,0 +1,14 @@
+CustomItem - item that has no special case like the agedbrie, backstageitem, conjureditem and lengendaryitem
+Reduces quality by 1 each day as 1 sellin day passes.
+Once the the sell by date passes, quality degrades twice as fast
+AgedBrie - increases quality by 1 upto a maximum of 50.
+BackstageItem - quality increases by 1 when there are more than 10 days left,
+              - quality increases by 2 when there are 6-10 days left < 11,
+              - quality increases by 3 when there are 5 days or less left < 6,
+              - quality drops to 0 after the concert(when the sellin is -ve).
+ConjuredItem - decreases quality by 2, twice as fast as normal items
+LegendaryItem - does nothing because lengendary items like sulfuras do not change over time.
+GildedRose -
+In the updateQuality method, it iterates through each item and uses a switch statement to select the appropriate item class.
+It then creates an instance of the corresponding item class and calls the updateQuality method to get the updated values for quality and sellIn.
+The method returns an array of updated items.
