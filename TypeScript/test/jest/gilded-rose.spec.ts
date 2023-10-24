@@ -1,4 +1,4 @@
-// import { Item, GildedRose } from '@/gilded-rose-check';
+// import { Item, GildedRose } from '@/gilded-rose';
 
 // describe('Gilded Rose', () => {
 //   it('should foo', () => {
@@ -8,7 +8,7 @@
 //   });
 // });
 
-import { CustomItem, AgedBrie, BackstageItem, ConjuredItem, LegendaryItem } from '@/gilded-rose-check';
+import { CustomItem, AgedBrie, BackstageItem, ConjuredItem, LegendaryItem } from '@/gilded-rose';
 describe(' Update Quality', () => {
   describe('Custom Item', () => {
     it('Should decrease the quality and sellin by 1 when sellin is greater than 0', () => {
